@@ -4,14 +4,8 @@ public class task3 {
         int diagonalSum = 0;
 
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                if (i == j) {
-                    matrix[i][j] = i;
-                    diagonalSum += i;
-                } else {
-                    matrix[i][j] = 0;
-                }
-            }
+            matrix[i][i] = i;
+            diagonalSum += i;
         }
 
         for (int i = 0; i < matrix.length; i++) {
